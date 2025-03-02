@@ -398,7 +398,7 @@ unsigned long time_to_msec(time* convert_time)
   return result;
 }
 
-bool remaining_time(time begin_time, time deduct_time, time* result) 
+void remaining_time(time begin_time, time deduct_time, time* result) 
 {
   if (deduct_time.milliseconds > begin_time.milliseconds) 
   {
